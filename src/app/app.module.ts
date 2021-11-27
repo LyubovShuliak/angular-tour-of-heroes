@@ -8,10 +8,10 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { MatNativeDateModule } from '@angular/material/core';
 import { HttpClientModule } from '@angular/common/http';
 
-import { DatepickerStartViewExample } from './app.component';
+import { Date } from './app.component';
 
 @NgModule({
-  declarations: [DatepickerStartViewExample],
+  declarations: [Date],
   imports: [
     BrowserAnimationsModule,
     BrowserModule,
@@ -22,6 +22,6 @@ import { DatepickerStartViewExample } from './app.component';
     ReactiveFormsModule,
   ],
   providers: [],
-  bootstrap: [DatepickerStartViewExample],
+  bootstrap: [Date],
 })
 export class AppModule {}

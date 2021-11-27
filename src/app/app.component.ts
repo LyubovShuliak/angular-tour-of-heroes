@@ -6,12 +6,10 @@ import { DateAdapter, MAT_DATE_FORMATS, MAT_DATE_LOCALE } from '@angular/materia
 
 import * as _moment from 'moment';
 // tslint:disable-next-line:no-duplicate-imports
-import { defaultFormat as _rollupMoment } from 'moment';
 
-const moment = _rollupMoment || _moment;
+import {default as _rollupMoment} from 'moment';
 
-// See the Moment.js docs for the meaning of these formats:
-// https://momentjs.com/docs/#/displaying/format/
+const moment = _rollupMoment || _moment
 export const MY_FORMATS = {
   parse: {
     dateInput: '',
@@ -26,6 +24,7 @@ export const MY_FORMATS = {
 @Component({
   selector: 'app-root',
   templateUrl: 'app.component.html',
+  styleUrls: ['app.component.scss'],
   providers: [
     {
       provide: DateAdapter,
@@ -36,6 +35,6 @@ export const MY_FORMATS = {
     { provide: MAT_DATE_FORMATS, useValue: MY_FORMATS },
   ],
 })
-export class DatepickerStartViewExample {
-  date = new FormControl(_moment([1998, 0, 1]))
+export class Date {
+  date = new FormControl(moment([1998, 0, 1]))
 }

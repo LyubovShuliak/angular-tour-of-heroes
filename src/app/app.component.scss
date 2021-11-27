@@ -1,0 +1,29 @@
+::ng-deep app-root mat-form-field {
+  background: rgb(201, 251, 255);
+  width: 240px;
+  grid-column: span 2;
+  margin-left: 60px;
+}
+
+::ng-deep .mat-datepicker-toggle {
+  color: rgb(26, 35, 126);
+}
+::ng-deep .mat-form-field-underline {
+  background: red;
+}
+
+fieldset {
+  display: grid;
+  grid-template-columns: 90px 1fr;
+  
+
+  gap: 30px;
+  width: 600px;
+  background-color: rgb(177, 234, 241);
+}
+input {
+  max-width: 50%;
+  width: min-content;
+}
+
+
