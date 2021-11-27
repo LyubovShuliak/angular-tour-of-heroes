@@ -8,10 +8,10 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { MatNativeDateModule } from '@angular/material/core';
 import { HttpClientModule } from '@angular/common/http';
 
-import { Date } from './app.component';
+import { Form } from './app.component';
 
 @NgModule({
-  declarations: [Date],
+  declarations: [Form],
   imports: [
     BrowserAnimationsModule,
     BrowserModule,
@@ -22,6 +22,6 @@ import { Date } from './app.component';
     ReactiveFormsModule,
   ],
   providers: [],
-  bootstrap: [Date],
+  bootstrap: [Form],
 })
 export class AppModule {}
